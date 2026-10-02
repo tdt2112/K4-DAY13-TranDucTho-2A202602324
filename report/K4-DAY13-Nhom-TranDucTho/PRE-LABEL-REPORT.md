@@ -2,8 +2,8 @@
 
 ## Nhóm và provenance
 
-- Mã nhóm/phòng: K4-DAY13-TranDucTho-02324
-- Thành viên: xem `TEAMMATES.md` (Trần Đức Thọ - MSSV: 02324, phụ trách vận hành và phân tích).
+- Mã nhóm/phòng: K4-DAY13-TranDucTho-2A202602324
+- Thành viên: xem `TEAMMATES.md` (Trần Đức Thọ - MSSV: 2A202602324 (02324), phụ trách vận hành và phân tích).
 - Trạng thái: `executed-by-group` (trực tiếp chạy runner và kiểm định trên máy với Docker engine).
 - Người thực sự chạy; ngày/giờ; hệ máy/architecture: Trần Đức Thọ; 2026-10-02; Windows 11 / WSL2 Ubuntu Linux (amd64 / x86_64).
 - Image tag và image ID; phiên bản repo: `day13-pointpillars:lc-20261001-amd64` / `sha256:e03983bd922ec29890bf547db8de408402efd82583680b62e671c20da2fd2c82`; commit revision: `0831856d921609312d42c7582c366e5a311bb7b1`.
@@ -39,7 +39,7 @@ Lấy số liệu trực tiếp từ `summary.csv`, `boxes-*.json` và đối ch
 
 ## Nhận xét cá nhân
 
-- **Thành viên: Trần Đức Thọ (MSSV: 02324)**
+- **Thành viên: Trần Đức Thọ (MSSV: 2A202602324 - 02324)**
   - **Vai trò:** Trực tiếp vận hành lệnh runner Docker, kiểm tra môi trường native Linux amd64, đọc và trích xuất dữ liệu từ `summary.csv`, JSON và ảnh Side view; viết báo cáo phân tích.
   - **Quan sát A/B/C:** Khi đối chiếu file `run-A/boxes-demo-delta-0-voxel-0.16.json` và `run-B/boxes-demo-delta-1.73-voxel-0.16.json`, nhận thấy việc đổi delta làm số hộp tăng từ 1 lên 13. Điều này khẳng định phép trừ delta trước inference là điều kiện tiên quyết để phân bố điểm của PointPillars khớp với không gian chuẩn của checkpoint pretrained KITTI.
   - **Diễn giải phép biến đổi z:**
