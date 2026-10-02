@@ -35,3 +35,10 @@ K4-DAY13-*/
 !data/ATTRIBUTION.md
 !data/LICENSE.txt
 student-bundles/
+student-prelabel-*/
+ket-qua-*/
+
+# Allow report markdown submissions
+!report/
+!report/**
+!report/**/*.md
